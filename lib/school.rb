@@ -15,7 +15,7 @@ class School
      if @roster[grade]
        @roster[grade] << student_name
      else
-       @roster[grade] = student_name
+       @roster[grade] << student_name
      end
       
      #We are checking to see if a value(array) already exists in the @roster hash at the key of the grade in the roster 
