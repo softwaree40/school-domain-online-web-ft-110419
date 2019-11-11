@@ -15,9 +15,9 @@ class School
      if @roster[grade]
        @roster[grade] << student_name
      else
-       @roster[grade] = student_name
+       @roster[grade]  = [student_name]
      end
-     
+      
      #We are checking to see if a value(array) already exists in the @roster hash at the key of the grade in the roster 
      #If there is no value(array), what should we do?
      #If there IS a value(array), what should we do?
@@ -31,5 +31,13 @@ class School
      
      #HINT: What is the value? The value is either nil or an array
    end
-  
+    def grade(grade)
+      @roster[grade]
+      
+    end
+    def sort
+      @roster.each do |grade,name|
+        @roster[grade] = name.sort
+      end
+    end
 end
