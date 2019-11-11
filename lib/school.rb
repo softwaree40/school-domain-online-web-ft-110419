@@ -32,7 +32,8 @@ class School
      #HINT: What is the value? The value is either nil or an array
    end
     def grade(grade)
-      return @roster[grade]
+      @roster[grade]
+      @roster[grade].sort
     end
-  
+   
 end
