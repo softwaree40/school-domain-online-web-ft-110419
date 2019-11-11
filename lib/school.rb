@@ -31,5 +31,7 @@ class School
      
      #HINT: What is the value? The value is either nil or an array
    end
+    def grade 
+    end
   
 end
