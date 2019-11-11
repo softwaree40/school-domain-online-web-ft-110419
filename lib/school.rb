@@ -36,6 +36,6 @@ class School
       
     end
     def sort
-      School.sort
+      .sort
     end
 end
